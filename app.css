@@ -1,0 +1,152 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0px 0px 15px 15px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+}
+
+.imgMob {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.imgDsk {
+    width: 0px;
+}
+
+span {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    padding: 5px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    padding: 0px 3px;
+    margin: 0px;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    padding: 5px;
+}
+
+#price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    padding: 5px 15px 5px 5px;
+    margin: 0px;
+    font-size: 28px;
+}
+
+s {
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    align-self: center;
+    border-radius: 8px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: white;
+    align-items: center;
+    height: 44px;
+    width: 250px;
+    font-weight: 700;
+    justify-content: center;
+}
+
+button:active {
+    background-color: hsl(212, 21%, 14%);
+}
+
+button img {
+    width: 5%;
+    padding: 10px;
+    align-self: center;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0px;
+}
+
+@media (min-width: 800px) and (min-height: 600px) { /* Desktop */
+body {
+    flex-direction: row;
+}
+    .imgMob {
+        width: 0px;
+    }
+
+    .imgDsk {
+        width: 100%;
+        max-width: 360px;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .card {
+        border-radius: 0px 15px 15px 0px;
+        height: 480px;
+        padding: 30px 15px;
+        justify-content: space-evenly;
+    }
+
+    /* button {
+        align-self
+    } */
+}
+
+@media (min-width: 800px) and (max-height: 500px) /* Rotated viewport */
+{
+    body {
+        flex-direction: row;
+    }
+        .imgMob {
+            border-radius: 15px 0px 0px 15px;
+            max-width: 100%;
+        }
+    
+        .card {
+            border-radius: 0px 15px 15px 0px;
+            height: 324.9px;
+    
+        }
+        .attribution {
+            position: absolute;
+            bottom: 0px;
+        }
+}
